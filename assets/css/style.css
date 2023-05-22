@@ -26,6 +26,12 @@ body {
     margin: 0 auto;
 }
 
+.dcard {
+    width: 15vw;
+    height: 30vh;
+    margin-top: 1.5vh;
+}
+
 .buttons {
     width: 50vw;
     height: 10vh;
