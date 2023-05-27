@@ -19,6 +19,8 @@ body {
     text-align: center;
 }
 
+/* game area */
+
 .game-area {
     width: 50vw;
     height: 50vh;
@@ -37,6 +39,8 @@ body {
     height: 30vh;
     margin-top: 1.5vh;
 }
+
+/* Buttons */
 
 .buttons {
     width: 50vw;
@@ -65,6 +69,56 @@ body {
     background-color: red;
 }
 
-p {
+/* paragraphs */
+
+.pscore {
     font-size: 1.5vw;
+}
+
+.rules {
+    font-size: .9vw;
+}
+
+/* media queries */
+
+@media (max-width: 1000px) {
+    .heading {
+        transform: scale(.75);
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 700px) {
+    .heading {
+        transform: scale(.6);
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 600px) {
+    .heading {
+        transform: scale(.5);
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 500px) {
+    .heading {
+        transform: scale(.4);
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 470px) {
+    .heading {
+        transform: scale(.35);
+        white-space: nowrap;
+    }
+}
+
+@media (max-width: 450px) {
+    .heading {
+        transform: scale(.3);
+        white-space: nowrap;
+    }
 }
