@@ -7,27 +7,33 @@ body {
     text-align: center;
 }
 
+/* header and footer */
+
 .heading {
-    font-size: 2rem;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.rules {
+    font-size: .75rem;
     text-align: center;
 }
 
 .game-area {
     width: 50vw;
     height: 50vh;
-    background-color: lightgreen;
     margin: auto;
 }
 
 .display-card {
     width: 20vw;
     height: 33vh;
-    background-color: green;
+    background-color: rgb(2, 58, 2);
     margin: 0 auto;
 }
 
 .dcard {
-    width: 15vw;
+    width: 12vw;
     height: 30vh;
     margin-top: 1.5vh;
 }
@@ -35,7 +41,6 @@ body {
 .buttons {
     width: 50vw;
     height: 10vh;
-    background-color: blue;
 }
 
 .button1,
@@ -58,4 +63,8 @@ body {
 .button1:active,
 .button2:active {
     background-color: red;
+}
+
+p {
+    font-size: 1.5vw;
 }
