@@ -27,17 +27,17 @@ body {
     margin: auto;
 }
 
-.display-card {
-    width: 20vw;
+#display-card {
+    width: 17vw;
     height: 33vh;
     background-color: rgb(2, 58, 2);
     margin: 0 auto;
+    background-repeat: no-repeat;
 }
 
-.dcard {
-    width: 12vw;
-    height: 30vh;
-    margin-top: 1.5vh;
+#score {
+    color: rgb(2, 58, 2);
+    font-size: 2vw;
 }
 
 /* Buttons */
@@ -47,25 +47,25 @@ body {
     height: 10vh;
 }
 
-.button1,
-.button2 {
+#button1,
+#button2 {
     width: 10vw;
     height: 5vh;
     font-size: 1.75vw;
 }
 
-.button1,
-.button2 {
+#button1,
+#button2 {
     margin-top: 3vh;
 }
 
-.button1:hover,
-.button2:hover {
+#button1:hover,
+#button2:hover {
     background-color: lightgreen;
 }
 
-.button1:active,
-.button2:active {
+#button1:active,
+#button2:active {
     background-color: red;
 }
 
@@ -77,6 +77,7 @@ body {
 
 .rules {
     font-size: .9vw;
+    color: black;
 }
 
 /* media queries */

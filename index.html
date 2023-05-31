@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Document</title>
+    <title>Higher or Lower</title>
 </head>
 
 <body>
@@ -16,15 +16,15 @@
         </h1>
     </header>
     <div class="game-area">
-        <div class="display-card"><img class="dcard" src="assets/images/joker_red.png" alt="card"></div>
+        <div id="display-card"></div>
         <div class="buttons">
-            <button data-type="submit" class="button1">Higher</button>
-            <button data-type="submit" class="button2">Lower</button>
+            <button data-type="submit" id="button1">Higher</button>
+            <button data-type="submit" id="button2">Lower</button>
         </div>
     </div>
-    <p class="pscore" 2>Player Score<span id="score"> 0 </span></p>
+    <p class="pscore">Player Score<span id="score"> 0 </span></p>
     <footer>
-        <p class="rules">Scoring is cumulative and players turn ends when incorrect guess submitted</p>
+        <p class="rules">Scoring is cumulative and players turn ends after 2 incorrect guesses. Aces low! Good luck!</p>
     </footer>
     <script src="assets/js/script.js"></script>
 </body>
