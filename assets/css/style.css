@@ -82,44 +82,78 @@ body {
 
 /* media queries */
 
-@media (max-width: 1000px) {
-    .heading {
-        transform: scale(.75);
-        margin-bottom: 20px;
+@media (max-width: 1500px) {
+    .game-area {
+        transform: scaleX(1.25);
     }
 }
+
+@media (max-width: 1000px) {
+    .heading {
+        transform: scale(.7);
+        margin-bottom: 20px;
+    }
+
+    .game-area {
+        transform: scaleX(1.7);
+    }
+}
+
 
 @media (max-width: 700px) {
     .heading {
         transform: scale(.6);
         margin-bottom: 15px;
     }
+
+    .game-area {
+        transform: scaleX(1.9);
+    }
 }
 
 @media (max-width: 600px) {
     .heading {
-        transform: scale(.5);
+        transform: scale(.55);
         margin-bottom: 10px;
     }
+
+    .game-area {
+        transform: scaleX(1.9);
+    }
+
 }
 
 @media (max-width: 500px) {
     .heading {
-        transform: scale(.4);
+        transform: scale(.5);
         margin-bottom: 0;
     }
+
+    .game-area {
+        transform: scaleX(1.9);
+    }
+
 }
 
 @media (max-width: 470px) {
     .heading {
-        transform: scale(.35);
+        transform: scale(.55);
         white-space: nowrap;
+    }
+
+    .game-area {
+        transform: scaleX(1.9);
     }
 }
 
 @media (max-width: 450px) {
     .heading {
-        transform: scale(.3);
+        transform: scale(.5);
         white-space: nowrap;
     }
+
+    .game-area {
+        transform: scaleX(2.75);
+    }
+
 }
