@@ -37,7 +37,7 @@ body {
 
 #score {
     color: rgb(2, 58, 2);
-    font-size: 2vw;
+    font-size: 2.5vw;
 }
 
 /* Buttons */
@@ -72,7 +72,7 @@ body {
 /* paragraphs */
 
 .pscore {
-    font-size: 1.5vw;
+    font-size: 2vw;
 }
 
 .rules {

@@ -1,49 +1,123 @@
-// Code will execute once page has loaded
+// Declare variables for DOM elements
 
-document.addEventListener("DOMContentLoaded", function () {
+const displayCard = document.getElementById('display-card');
+const higherButton = document.getElementById('button1');
+const lowerButton = document.getElementById('button2');
+const playerScore = document.getElementById('score');
+const numRounds = 26;
 
-    // Declare constants for DOM elements
+let score = 0;
+let cards = [];
+let currentCardIndex = 0;
 
-    const displayCard = document.getElementById('display-card');
-    const higherButton = document.getElementById('button1');
-    const lowerButton = document.getElementById('button2');
-    const playerScore = document.getElementById('score');
-    let score = 0;
+// Add event listener to run game when page has loaded
 
-    /** Generates random card */
+document.addEventListener("DOMContentLoaded", startGame);
 
-    function randomCard() {
-        let suits = ['clubs', 'diamonds', 'spades', 'hearts'];
-        let randomSuit = suits[Math.floor(Math.random() * suits.length)];
-        let randomValue = Math.floor(Math.random() * 14) + 1;
-        return {
-            TL: `assets/images/${randomSuit}_${randomValue}.png`,
-            value: randomValue
-        };
+higherButton.addEventListener('click', function () {
+    let currentCard = cards[currentCardIndex];
+    let nextCard = cards[currentCardIndex + 1];
+    displayCardPic(nextCard);
+    console.log('next', nextCard.value);
+
+
+    if (currentCard.value < nextCard.value) {
+        score += 1;
+        updateScoreDisplay();
+    } else if (currentCard.value === nextCard.value) {
+        alert('Snap! Guess again!');
     }
 
-    /** Displays card pic  */
-
-    function displayCardPic() {
-        let nextCard = randomCard();
-        displayCard.style.backgroundImage = `url(${nextCard.TL})`;
-        displayCard.style.backgroundPosition = 'center';
-        displayCard.style.backgroundSize = '10vw 25vh';
-        return nextCard;
+    else {
+        setTimeout(() => {
+            displayCardPic(nextCard);
+            alert('Gameover! Try again!');
+            startGame();
+        }, 500);
+        return;
     }
 
-    displayCardPic();
+    currentCardIndex += 1;
 
-    // Add event listeners
-
-    higherButton.addEventListener('click', function () {
-        let nextCardAgain = displayCardPic();
-        console.log(nextCardAgain.value);
-    });
-
-    lowerButton.addEventListener('click', function () {
-        let nextCardAgain = displayCardPic();
-        console.log(nextCardAgain.value);
-    });
-
+    if (currentCardIndex >= numRounds) {
+        alert('Gameover! Play again!');
+        startGame();
+    }
+    else {
+        displayCardPic(cards[currentCardIndex]);
+    }
 });
+
+lowerButton.addEventListener('click', function () {
+    let currentCard = cards[currentCardIndex];
+    let nextCard = cards[currentCardIndex + 1];
+    displayCardPic(nextCard);
+    console.log('next', nextCard.value);
+
+    if (currentCard.value > nextCard.value) {
+        score += 1;
+        updateScoreDisplay();
+    } else if (currentCard.value === nextCard.value) {
+        alert('Snap! Guess again!');
+    }
+
+    else {
+        setTimeout(() => {
+            displayCardPic(nextCard);
+            alert('Gameover! Try again!');
+            startGame();
+        }, 500);
+        return;
+    }
+
+    currentCardIndex += 1;
+
+    if (currentCardIndex >= numRounds) {
+        alert('Game complete! Play again!');
+        startGame();
+    }
+
+    else {
+        displayCardPic(cards[currentCardIndex]);
+    }
+});
+
+function startGame() {
+    score = 0;
+    updateScoreDisplay();
+    cards = [];
+    currentCardIndex = 0;
+
+    for (let i = 1; i <= numRounds; i++) {
+        let randomCardToArray = randomCard();
+        cards.push(randomCardToArray);
+    }
+
+    displayCardPic(cards[currentCardIndex]);
+}
+
+/** Generates random card */
+
+function randomCard() {
+    let suits = ['clubs', 'diamonds', 'spades', 'hearts'];
+    let randomSuit = suits[Math.floor(Math.random() * suits.length)];
+    let randomValue = Math.floor(Math.random() * 13) + 1;
+    return {
+        TL: `assets/images/${randomSuit}_${randomValue}.png`,
+        value: randomValue
+    };
+}
+
+/** Displays card pic  */
+
+function displayCardPic(card) {
+    displayCard.style.backgroundImage = `url(${card.TL})`;
+    displayCard.style.backgroundPosition = 'center';
+    displayCard.style.backgroundSize = '10vw 25vh';
+}
+
+function updateScoreDisplay() {
+    playerScore.textContent = score.toString();
+}
+
+displayCardPic(cards[currentCardIndex]);
