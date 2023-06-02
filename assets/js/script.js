@@ -82,6 +82,8 @@ lowerButton.addEventListener('click', function () {
     }
 });
 
+/** Set start conditions and begin game */
+
 function startGame() {
     score = 0;
     updateScoreDisplay();
@@ -113,8 +115,10 @@ function randomCard() {
 function displayCardPic(card) {
     displayCard.style.backgroundImage = `url(${card.TL})`;
     displayCard.style.backgroundPosition = 'center';
-    displayCard.style.backgroundSize = '10vw 25vh';
+    displayCard.style.backgroundSize = '70%';
 }
+
+/** Update score on webpage */
 
 function updateScoreDisplay() {
     playerScore.textContent = score.toString();

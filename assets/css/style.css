@@ -10,8 +10,15 @@ body {
 /* header and footer */
 
 .heading {
-    font-size: 3rem;
-    text-align: center;
+    font-size: 3.5vw;
+    width: 100%;
+    min-width: 280px;
+    max-width: 800px;
+    margin: 2% auto;
+}
+
+#logo {
+    width: 10%;
 }
 
 .rules {
@@ -22,14 +29,15 @@ body {
 /* game area */
 
 .game-area {
-    width: 50vw;
-    height: 50vh;
+    width: 100%;
+    min-width: 280px;
+    max-width: 800px;
     margin: auto;
 }
 
 #display-card {
-    width: 17vw;
-    height: 33vh;
+    width: 33%;
+    aspect-ratio: 1/1.25;
     background-color: rgb(2, 58, 2);
     margin: 0 auto;
     background-repeat: no-repeat;
@@ -43,20 +51,21 @@ body {
 /* Buttons */
 
 .buttons {
-    width: 50vw;
-    height: 10vh;
+    width: 100%;
+    margin: 0 auto;
 }
 
 #button1,
 #button2 {
-    width: 10vw;
-    height: 5vh;
+    width: 20%;
     font-size: 1.75vw;
+    margin: 0 auto;
+    aspect-ratio: 4/1;
 }
 
 #button1,
 #button2 {
-    margin-top: 3vh;
+    margin-top: 2vw;
 }
 
 #button1:hover,
@@ -73,87 +82,12 @@ body {
 
 .pscore {
     font-size: 2vw;
+    background-color: white;
 }
 
 .rules {
-    font-size: .9vw;
+    font-size: 1vw;
     color: black;
 }
 
 /* media queries */
-
-@media (max-width: 1500px) {
-    .game-area {
-        transform: scaleX(1.25);
-    }
-}
-
-@media (max-width: 1000px) {
-    .heading {
-        transform: scale(.7);
-        margin-bottom: 20px;
-    }
-
-    .game-area {
-        transform: scaleX(1.7);
-    }
-}
-
-
-@media (max-width: 700px) {
-    .heading {
-        transform: scale(.6);
-        margin-bottom: 15px;
-    }
-
-    .game-area {
-        transform: scaleX(1.9);
-    }
-}
-
-@media (max-width: 600px) {
-    .heading {
-        transform: scale(.55);
-        margin-bottom: 10px;
-    }
-
-    .game-area {
-        transform: scaleX(1.9);
-    }
-
-}
-
-@media (max-width: 500px) {
-    .heading {
-        transform: scale(.5);
-        margin-bottom: 0;
-    }
-
-    .game-area {
-        transform: scaleX(1.9);
-    }
-
-}
-
-@media (max-width: 470px) {
-    .heading {
-        transform: scale(.55);
-        white-space: nowrap;
-    }
-
-    .game-area {
-        transform: scaleX(1.9);
-    }
-}
-
-@media (max-width: 450px) {
-    .heading {
-        transform: scale(.5);
-        white-space: nowrap;
-    }
-
-    .game-area {
-        transform: scaleX(2.75);
-    }
-
-}

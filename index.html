@@ -12,19 +12,20 @@
 <body>
     <header>
         <h1 class="heading">
-            <img class="logo" src="assets/images/logo_1_120x80ed.jpg" alt="logo">Higher or Lower
+            <img id="logo" src="assets/images/logo_1_120x80ed.jpg" alt="logo">Higher or Lower
         </h1>
     </header>
-    <div class="game-area">
+    <section class="game-area">
         <div id="display-card"></div>
         <div class="buttons">
             <button id="button1">Higher</button>
             <button id="button2">Lower</button>
         </div>
-    </div>
-    <p class="pscore">Player Score: <span id="score">0</span></p>
+        <p class="pscore">Player Score: <span id="score">0</span></p>
+    </section>
     <footer>
-        <p class="rules">Scoring is cumulative and players turn ends after an incorrect guess. Aces low! Good luck!</p>
+        <p class="rules">Scoring is cumulative and players turn ends after an incorrect guess. If the next card is the
+            same as previous then no score and have another try.<br> Aces are low! Good luck!</p>
     </footer>
     <script src="assets/js/script.js"></script>
 </body>
