@@ -42,3 +42,51 @@ This card-guessing game is a simple and engaging game that requires players to p
 - It is valuable as it shows the game rules and an encouraging message alluding to the nature of the game. Luck!
 
 ![Screenshot of the footer shoing the gameplay rules](assets/images/rules.jpg)
+
+## Testing
+
+ - Tested game in Google Chrome, Microsoft Edge and Mozzila Firefox and it works and views correctly
+ - I confirmed that game results are correct and consistent
+ - I confirmed that each section is visible and easy to understand
+ - I confirmed that the colours and fonts chosen are easily readable and accessible by running it thoough Lighthouse.
+
+![Screenshot of the JSHint results](assets/images/lighthouse.jpg)
+
+## Validator Testing
+
+- No errors were found when passing through W3C Validator
+- No errors were found when paaing through official (Jigsaw) validator
+- No significant errors were found when passing through JSHint, but there were some warnings included
+
+![First screenshot of the JSHint results](assets/images/JSHint.jpg)
+![Second screenshot of the JSHint results](assets/images/JSHint1.jpg)
+
+## Deployment
+
+- Site deployed to GitHub pages by the following steps:
+
+  - Go Github repository
+
+  - Open settings
+
+  - Go to Pages
+
+  - From the Source drop-down menu select to deploy from a branch
+
+  - From the branch drop-down menu select main
+
+  - Click Save and the site link to the website is provided
+
+## Left to Implement
+
+ - I would like to adjust the sixe of the game on the smaller screen in the future with media query or css tweaks
+
+## Credits
+
+- The Love Maths Project and Rock, Paper, Scissors were both inspirations for the code in this project.
+
+- Google, W3C Tutorial and Youtube were also excellent resources for the code in this project
+
+- The logo image credit - href="http://www.freepik.com">Designed by brgfx / Freepik
+
+- The card credit - freesvg.org
