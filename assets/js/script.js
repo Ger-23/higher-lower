@@ -25,7 +25,7 @@ higherButton.addEventListener('click', function () {
         score += 1;
         updateScoreDisplay();
     } else if (currentCard.value === nextCard.value) {
-        alert('Snap! Guess again!');
+        alert('Snap! Same card. Guess again!');
     }
 
     else {
@@ -58,7 +58,7 @@ lowerButton.addEventListener('click', function () {
         score += 1;
         updateScoreDisplay();
     } else if (currentCard.value === nextCard.value) {
-        alert('Snap! Guess again!');
+        alert('Snap! Same card. Guess again!');
     }
 
     else {

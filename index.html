@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Higher or lower card guessing game">
+    <meta name="keywords" content="higher or lower, cards, game">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Higher or Lower</title>
 </head>
@@ -12,17 +14,17 @@
 <body>
     <header>
         <h1 class="heading">
-            <img id="logo" src="assets/images/logo_1_120x80ed.jpg" alt="logo">Higher or Lower
+            <img id="logo" src="assets/images/logo_1_120x80ed.jpg" alt="three cards with backs facing">Higher or Lower
         </h1>
     </header>
-    <section class="game-area">
+    <main class="game-area">
         <div id="display-card"></div>
         <div class="buttons">
-            <button id="button1">Higher</button>
-            <button id="button2">Lower</button>
+            <button aria-label="Higher Button" id="button1">Higher</button>
+            <button aria-label="Lower Button" id="button2">Lower</button>
         </div>
         <p class="pscore">Player Score: <span id="score">0</span></p>
-    </section>
+    </main>
     <footer>
         <p class="rules">Scoring is cumulative and players turn ends after an incorrect guess. If the next card is the
             same as previous then no score and have another try.<br> Aces are low! Good luck!</p>

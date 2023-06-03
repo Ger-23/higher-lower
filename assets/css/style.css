@@ -81,7 +81,7 @@ body {
 /* paragraphs */
 
 .pscore {
-    font-size: 2vw;
+    font-size: 1.75vw;
     background-color: white;
 }
 
@@ -89,5 +89,3 @@ body {
     font-size: 1vw;
     color: black;
 }
-
-/* media queries */

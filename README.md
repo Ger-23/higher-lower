@@ -1,39 +1,30 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Higher or Lower
 
-Welcome,
+This card-guessing game is a simple and engaging game that requires players to predict whether the next card drawn from the deck will be higher or lower than the card they are faced with. It offers a straightforward gameplay experience that appeals to a broad audience. Its accessible and quick gameplay makes it an ideal choice for some light entertainment when a person has a minutes spare or can be incorporated into a more competetitive game for family and friends.
 
-This is the Code Institute student template for Codeanywhere. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+## Features
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **May 11th, 2023**
+### The Header
+  - Positioned above the main game the header displays the name of the game in large letters that contrast clearly with the background. The title describes clearly the nature of the game.
+  - The image is symbolic of the instruments of the game which are of course playing cards. It shows three cards with backs facing to the front.
 
-## Codeanywhere Reminders
+### Main Section
+ - Displays clearly the current card image against a dark green background.
+ - The next card is displayed once the user makes their choice on the buttons below.
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
+### Game Options
 
-`python3 -m http.server`
+- The game options are the two choices mentioned in the game title: Higher or Lower. These choices are made with interactive buttons which highlight in green when hovered over and red when the choice is clicked.
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+### Game Results
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
+- After a player makes their choice the game reveals the next card from the deck and increments and displays the score by one for each correct guess.
+- When an incorrect choice is made the game displays a message at the top of the screen to state that the game is over and to start another game.
+- A new game is started and the score reset when the 'OK' is clicked in the 'game over' alert.
+- When two cards values are the same the conputer displays a message at the top of the screen to state this and encourages the user to make another choice.
+- The score is clearly displayed underneath the card image in clear and contrasting colours which tie in the red of the heading and the green background in the display card area.
 
-`http_server`
+### The Footer
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
-
-A button should appear to click: _Open Preview_ or _Open Browser_.
-
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
-
----
-
-Happy coding!
+- The footer is located beneath the game score.
+- It is valuable as it shows the game rules and an encouraging message alluding to the nature of the game. Luck!
