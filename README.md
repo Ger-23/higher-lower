@@ -2,6 +2,9 @@
 
 This card-guessing game is a simple and engaging game that requires players to predict whether the next card drawn from the deck will be higher or lower than the card they are faced with. It offers a straightforward gameplay experience that appeals to a broad audience. Its accessible and quick gameplay makes it an ideal choice for some light entertainment when a person has a minutes spare or can be incorporated into a more competetitive game for family and friends.
 
+![Screenshot of the different displays](assets/images/Responsiveness.jpg)
+
+
 ## Features
 
 ### The Header
@@ -79,13 +82,19 @@ This card-guessing game is a simple and engaging game that requires players to p
 
 ## Left to Implement
 
- - I would like to adjust the sixe of the game on the smaller screen in the future with media query or css tweaks
+ - I would like to adjust the size of the game on the smaller screens in the future
+
+## Bugs
+
+- None
 
 ## Credits
 
 - The Love Maths Project and Rock, Paper, Scissors were both inspirations for the code in this project.
 
 - Google, W3C Tutorial and Youtube were also excellent resources for the code in this project
+
+- Mentor sessions through Code Institute
 
 - The logo image credit - href="http://www.freepik.com">Designed by brgfx / Freepik
 
