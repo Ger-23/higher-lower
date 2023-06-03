@@ -32,7 +32,13 @@ This card-guessing game is a simple and engaging game that requires players to p
 
 ![Screenshot of the incorrect guess/game over message](assets/images/game_over_alert.jpg)
 
+![Screenshot of the same card message](assets/images/same_card_alert.jpg)
+
+![Screenshot of the player score area](assets/images/score.jpg)
+
 ### The Footer
 
 - The footer is located beneath the game score.
 - It is valuable as it shows the game rules and an encouraging message alluding to the nature of the game. Luck!
+
+![Screenshot of the footer shoing the gameplay rules](assets/images/rules.jpg)
